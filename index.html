@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="et">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>TornStar Feedback</title>
+  <title>TornStar Tagasiside</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 <style>
@@ -146,55 +146,52 @@
 
   <div class="language-switcher">
     <button id="currentLang" onclick="toggleDropdown()">
-      <span class="flag-icon flag-icon-gb"></span>
+      <span class="flag-icon flag-icon-ee"></span>
     </button>
     <div id="langDropdown" class="dropdown-content">
+      <a href="/"><span class="flag-icon flag-icon-gb"></span></a>
       <a href="/ru/"><span class="flag-icon flag-icon-ru"></span></a>
       <a href="/et/"><span class="flag-icon flag-icon-ee"></span></a>
-      <a href="/"><span class="flag-icon flag-icon-gb"></span></a>
     </div>
   </div>
 
   <div class="img"><img src="/IMG_2096.PNG" alt="TORNSTAR"></div>
 
   <div class="parent-container">
-    <h1>New talents, ideas, or partnership?</h1>
-    <h1>Let’s talk!</h1>
+    <h1>Uued talendid, ideed või partnerlus?</h1>
+    <h1>Räägime!</h1>
   </div>
 
   <div class="form-container">
-    <!-- Netlify Forms (EN) -->
-    <form name="contact-en" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/submitted" >
-      <input type="hidden" name="form-name" value="contact-en" />
-      <p class="hidden"><label>Don’t fill this: <input name="bot-field" /></label></p>
+    <!-- Netlify Forms (ET) -->
+    <form name="contact-et" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/et/submitted">
+      <input type="hidden" name="form-name" value="contact-et" />
+      <p class="hidden"><label>Ära täida seda: <input name="bot-field" /></label></p>
 
-      <label for="fullname">Full name</label>
-      <input id="fullname" name="fullname" type="text" placeholder="John Smith" required autocomplete="name" />
+      <label for="fullname">Ees- ja perekonnanimi</label>
+      <input id="fullname" name="fullname" type="text" placeholder="Mari Maasikas" required autocomplete="name" />
 
-      <label for="phone">Phone number</label>
+      <label for="phone">Telefon</label>
       <input id="phone" name="phone" type="tel" placeholder="+372 5555 5555" required autocomplete="tel" />
 
-      <label for="email">E-mail</label>
-      <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email" />
+      <label for="email">E-post</label>
+      <input id="email" name="email" type="email" placeholder="nimi@näide.ee" required autocomplete="email" />
 
       <div class="radio-wrap">
-        <label>Topic</label>
+        <label>Teema</label>
         <div class="radio-row">
-          <label class="radio-item"><input type="radio" name="topic" value="Business proposal" required /> <span>Business proposal</span></label>
-          <label class="radio-item"><input type="radio" name="topic" value="Ideas" /> <span>Ideas</span></label>
-          <label class="radio-item"><input type="radio" name="topic" value="New talents" /> <span>New talents</span></label>
+          <label class="radio-item"><input type="radio" name="topic" value="Äripakkumine" required /> <span>Äripakkumine</span></label>
+          <label class="radio-item"><input type="radio" name="topic" value="Ideed" /> <span>Ideed</span></label>
+          <label class="radio-item"><input type="radio" name="topic" value="Uute talentide leidmine" /> <span>Uute talentide leidmine</span></label>
         </div>
       </div>
 
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Saada" />
     </form>
   </div>
 
   <script>
-    function toggleDropdown() {
-      const dd = document.getElementById("langDropdown");
-      dd.style.display = dd.style.display === "block" ? "none" : "block";
-    }
+    function toggleDropdown(){const dd=document.getElementById("langDropdown");dd.style.display=dd.style.display==="block"?"none":"block";}
   </script>
 </body>
 </html>
